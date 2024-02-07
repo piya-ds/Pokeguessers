@@ -3,3 +3,9 @@ function showSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'flex';
 }
+
+function hideSidebar(){
+    console.log("I am closing the sidebar");
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}

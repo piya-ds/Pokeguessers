@@ -52,9 +52,9 @@ nav li:first-child{
 
 /* Temporary Logo styling -----------------------*/
 nav li:first-child img{
-    height: 50px;
-    width: 50px;
-    padding-right: 10px;
+    height: 45px;
+    width: 45px;
+    padding-right: 5px;
 }
 
 ul li i{
@@ -84,4 +84,23 @@ ul li i{
 
 .sidebar a{
     width: 100%;
+}
+
+/*Hide Sidebar button on default screens larger than 800px*/
+.sidebarbutton{
+    display: none;
+}
+
+/* Media Queries -----------------------*/
+
+/*Hide Horizontal nav bar on mobile and display sidebar button*/
+@media(max-width: 800px){
+    .hideOnMobile{
+        display:none;
+    }
+
+    .sidebarbutton{
+        display: block;
+    }
+
 }
