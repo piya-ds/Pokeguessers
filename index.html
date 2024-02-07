@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pockeguessers</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/51b9bf2f41.js" crossorigin="anonymous"></script>
+    <!------------------------>
+
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li><a href="#">Pokeguessers</a></li>
+        <!-- SideBar Navigation Bar-->
+        <ul class ="sidebar">
+            <li><a href="#"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a></li>
             <li><a href="#">Pokemon Guess Quiz </a></li>
             <li><a href="#">Pokemon Types Quiz</a></li>
             <li><a href="#">Pokemon Types</a></li>
             <li><a href="#">Pokedex</a></li>
         </ul>
+
+        <!-- Standard Horizontal Navigation Bar -->
+        <ul>
+            <li><a href="#"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a></li>
+            <li><a href="#">Pokemon Guess Quiz </a></li>
+            <li><a href="#">Pokemon Types Quiz</a></li>
+            <li><a href="#">Pokemon Types</a></li>
+            <li><a href="#">Pokedex</a></li>
+            <li onclick=showSidebar()><a href=""><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
     </nav>
 
-<script src="assets/javascript/script.js"></script>
+<script> 
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+</script>
+
 </body>
 </html>
