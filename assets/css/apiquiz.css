@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:wght@300;400&display=swap');
+
+:root{
+    --white-color: #fff;
+    --button-correct: #5aae76;
+    --button-wrong: #e13e36;
+    --button-hover: #aaa;
+}
+
+body {
+    
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: #c6caf1;
+}
+#container{
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* --------------------------------------user section------------------- */
+#userdetails{
+    display: flex;
+    justify-content: space-between;
+}
+#user-name{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#progress-bar{
+    width: 10rem;
+    height: 2rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+#progressbarfull{
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;
+}
+
+
+/* ----------------------------quiz section--------------------------- */
+#card{
+
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#header{
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 100px;
+    font-size: 3rem;
+}
+
+#pockemanimg{
+    height: 200px;
+    max-width: 100%;
+}
+.options-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.choice{
+    height: 50px;
+    margin: 10px;
+    width: 44%;
+}
+#lives{
+    color: #17cf55;
+    align-items: center;
+    margin: 10px 10px;
+}
+#hearts{
+    width: 100%;
+    height: 100%;
+}
+#submitquiz{
+    display: flex;
+    align-items: center;
+}
+.finishquiz{
+
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--white-color);
+    height: 50px;
+    width: 90px;
+    background-color: #2f22e2;
+}
+
+
+
