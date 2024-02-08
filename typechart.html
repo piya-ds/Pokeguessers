@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Chart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/51b9bf2f41.js" crossorigin="anonymous"></script>
+    <!------------------------>
+
+</head>
+
+<body>
+    <nav>
+        <!-- SideBar Navigation Bar-->
+        <ul class="sidebar">
+            <li>
+                <a href="#"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a>
+            </li>
+            <li><a href="#">Pokemon Guess Quiz </a></li>
+            <li><a href="#">Pokemon Types Quiz</a></li>
+            <li><a href="typechart.html">Pokemon Types</a></li>
+            <li><a href="#">Pokedex</a></li>
+        </ul>
+
+        <!-- Standard Horizontal Navigation Bar -->
+        <ul>
+            <li>
+                <a href="#"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a>
+            </li>
+            <li><a href="#">Pokemon Guess Quiz </a></li>
+            <li><a href="#">Pokemon Types Quiz</a></li>
+            <li><a href="#">Pokemon Types</a></li>
+            <li><a href="typechart.html">Pokedex</a></li>
+            <li onclick=showSidebar()><a href=""><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card-container">
+            <div class="pokemon-type-cards">
+                <!-- Bug -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/bug.png');"></div>
+                    <div class="type-name gradient-text">B u g</div>
+                    <div class="descriptions">
+                        <div class="top-left positive-effect">Super effective
+                            <br> against:
+                            <div>
+                                Grass,
+                                <br>Psychic,
+                                <br>Dark
+                            </div>
+                        </div>
+                        <div class="top-right negative-effect">Not very
+                            <br> effective against:
+                            <div>
+                                Fighting, Flying,
+                                <br>Poison, Ghost,
+                                <br>Steel, Fire, Fairy
+                            </div>
+                        </div>
+                        <div class="bottom-left positive-effect">Resistant to:
+                            <div>Fighting, Ground,
+                                <br>Grass</div>
+                        </div>
+                        <div class="bottom-right negative-effect">Weak to:
+                            <div>Flying, Rock,
+                                <br>Fire</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dark -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/dark.png');"></div>
+                    <div class="type-name gradient-text">D a r k</div>
+                    <div class="descriptions">
+                        <div class="top-left positive-effect">Super effective
+                            <br> against:
+                            <div>
+                                Ghost,
+                                <br>Psychic
+                            </div>
+                        </div>
+                        <div class="top-right negative-effect">Not very
+                            <br> effective against:
+                            <div>
+                                Fighting,
+                                <br>Dark, Fairy
+                            </div>
+                        </div>
+                        <div class="bottom-left positive-effect">Resistant to:
+                            <div>Ghost, Dark,
+                                <br>Psychic
+                                <br> (no effect)
+                            </div>
+                        </div>
+                        <div class="bottom-right negative-effect">Weak to:
+                            <div>Fighting, Bug,
+                                <br>Fairy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dragon -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/dragon.png');"></div>
+                    <div class="type-name gradient-text">D r a g o n</div>
+                    <div class="descriptions">
+                        <div class="top-left positive-effect">Super effective
+                            <br> against:
+                            <div>
+                                Dragon
+                            </div>
+                        </div>
+                        <div class="top-right negative-effect">Not very
+                            <br> effective against:
+                            <div>
+                                Steel, Fairy
+                                <br>(no effect)
+                            </div>
+                        </div>
+                        <div class="bottom-left positive-effect">Resistant to:
+                            <div>Fire, Water,
+                                <br>Grass, Electric
+                            </div>
+                        </div>
+                        <div class="bottom-right negative-effect">Weak to:
+                            <div>Ice,
+                                <br>Dragon, Fairy</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Electric -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/electric.png');"></div>
+                    <div class="type-name gradient-text">E l e c t r i c</div>
+                    <div class="descriptions">
+                        <div class="top-left positive-effect">Super effective
+                            <br> against:
+                            <div>
+                                Flying, Water
+                            </div>
+                        </div>
+                        <div class="top-right negative-effect">Not very
+                            <br> effective against:
+                            <div>
+                                Grass,
+                                <br>Electric, Dragon,
+                                <br> Ground
+                                <br> (no effect)
+                            </div>
+                        </div>
+                        <div class="bottom-left positive-effect">Resistant to:
+                            <div>Flying, Steel,
+                                <br> Electric
+                            </div>
+                        </div>
+                        <div class="bottom-right negative-effect">Weak to:
+                            <div>Ground</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fairy -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/fairy.png');"></div>
+                    <div class="type-name gradient-text">F a i r y</div>
+                    <div class="descriptions">
+                        <div class="top-left positive-effect">Super effective
+                            <br> against:
+                            <div>
+                                Fighting, Dragon,
+                                <br>Dark
+                            </div>
+                        </div>
+                        <div class="top-right negative-effect">Not very
+                            <br> effective against:
+                            <div>
+                                Poison,
+                                <br>Steel, Fire
+                            </div>
+                        </div>
+                        <div class="bottom-left positive-effect">Resistant to:
+                            <div>Fighting, Bug,
+                                <br>Dark, Dragon
+                                <br> (no effect)
+                            </div>
+                        </div>
+                        <div class="bottom-right negative-effect">Weak to:
+                            <div>Poison, Steel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fighting -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/fighting.png');"></div>
+                    <div class="type-name gradient-text">F i g h t i n g</div>
+                </div>
+
+                <!-- Fire -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/fire.png');"></div>
+                    <div class="type-name gradient-text">F i r e</div>
+                </div>
+
+                <!-- Flying -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/flying.png');"></div>
+                    <div class="type-name gradient-text">F l y i n g</div>
+                </div>
+
+                <!-- Ghost -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/ghost.png');"></div>
+                    <div class="type-name gradient-text">G h o s t</div>
+                </div>
+
+                <!-- Grass -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/grass.png');"></div>
+                    <div class="type-name gradient-text">G r a s s</div>
+                </div>
+
+                <!-- Ground -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/ground.png');"></div>
+                    <div class="type-name gradient-text">G r o u n d</div>
+                </div>
+
+                <!-- Ice -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/ice.png');"></div>
+                    <div class="type-name gradient-text">I c e</div>
+                </div>
+
+                <!-- Normal -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/normal.png');"></div>
+                    <div class="type-name gradient-text">N o r m a l</div>
+                </div>
+
+                <!-- Poison -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/poison.png');"></div>
+                    <div class="type-name gradient-text">P o i s o n</div>
+                </div>
+
+                <!-- Psychic -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/psychic.png');"></div>
+                    <div class="type-name gradient-text">P s y c h i c</div>
+                </div>
+
+                <!-- Rock -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/rock.png');"></div>
+                    <div class="type-name gradient-text">R o c k</div>
+                </div>
+
+                <!-- Steel -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/steel.png');"></div>
+                    <div class="type-name gradient-text">S t e e l</div>
+                </div>
+
+                <!-- Water -->
+                <div class="pokemon-type-card">
+                    <div class="type-icon" style="background-image: url('assets/images/chart-imgs/water.png');"></div>
+                    <div class="type-name gradient-text">W a t e r</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/javascript/script.js">
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>
