@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,36 +17,8 @@
     <!--Nav Bar ----------------------------------------->
     <nav>
         <!-- SideBar Navigation Bar-->
+        <!-- Hidden by default in CSS and set to Display by clicking sidebar icon when visible-->
         <ul class="sidebar">
-            <li>
-                <a href="#"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a>
-            </li>
-            <!-- Hidden by default in CSS and set to Display by clicking sidebar icon when visible-->
-            <ul class="sidebar">
-                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
-                <li><a href="#">Pokemon Guess Quiz </a></li>
-                <li><a href="#">Pokemon Types Quiz</a></li>
-                <li><a href="typechart.html">Pokemon Types</a></li>
-                <li><a href="#">Pokedex</a></li>
-            </ul>
-
-            <!-- Standard Horizontal Navigation Bar -->
-            <ul>
-                <li>
-                    <a href="#"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a>
-                </li>
-                <li><a href="#">Pokemon Guess Quiz </a></li>
-                <li><a href="#">Pokemon Types Quiz</a></li>
-                <li><a href="#">Pokemon Types</a></li>
-                <li><a href="typechart.html">Pokedex</a></li>
-                <li class="sidebarbutton" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                <li>
-                    <a href="#"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a>
-                </li>
-            </ul>
-
-      <!-- Hidden by default in CSS and set to Display by clicking sidebar icon when visible-->
-        <ul class ="sidebar">
             <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
             <li><a href="#">Pokemon Guess Quiz </a></li>
             <li><a href="#">Pokemon Types Quiz</a></li>
@@ -55,12 +28,14 @@
 
         <!-- Standard Horizontal Navigation Bar -->
         <ul>
-            <li><a href="index.html"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a></li>
-            <li class ="hideOnMobile"><a href="#">Pokemon Guess Quiz </a></li>
-            <li class ="hideOnMobile"><a href="#">Pokemon Types Quiz</a></li>
-            <li class ="hideOnMobile"><a href="typechart.html">Pokemon Types</a></li>
-            <li class ="hideOnMobile"><a href="#">Pokedex</a></li>
-            <li class ="sidebarbutton" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li>
+                <a href="index.html"><img src="/assets/images/pokeball-icon.png">Pokeguessers</a>
+            </li>
+            <li class="hideOnMobile"><a href="#">Pokemon Guess Quiz </a></li>
+            <li class="hideOnMobile"><a href="typechart.html">Pokemon Types Quiz</a></li>
+            <li class="hideOnMobile"><a href="#">Pokemon Types</a></li>
+            <li class="hideOnMobile"><a href="#">Pokedex</a></li>
+            <li class="sidebarbutton" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
     </nav>
     <!-- Main Content ----------------------------------->
@@ -85,4 +60,5 @@
     <!-- Scripts ---------------------------------------->
     <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>

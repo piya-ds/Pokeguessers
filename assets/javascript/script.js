@@ -33,15 +33,15 @@ cards.forEach(function(card) {
             descriptions.classList.toggle('show-descriptions');
         }
     });
- main
- 
-function showSidebar(){
+});
+
+function showSidebar() {
     console.log("I am running the showsidebar function");
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'flex';
 }
 
-function hideSidebar(){
+function hideSidebar() {
     console.log("I am closing the sidebar");
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
