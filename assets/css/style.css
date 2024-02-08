@@ -87,8 +87,11 @@ ul li i {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+
 /*Hide Sidebar button on default screens larger than 800px*/
-.sidebarbutton{
+
+.sidebarbutton {
     display: none;
 }
 
@@ -163,7 +166,7 @@ ul li i {
 /* makes the gradient work */
 
 .gradient-text {
-    background: -webkit-linear-gradient(right, #0075be, #ffcc00, #ffcc00, #0075be);
+    background: -webkit-linear-gradient(right, #388adc, #fff, #fff, #388adc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'pokemon_solidnormal', Arial, Helvetica, sans-serif;
@@ -175,7 +178,7 @@ ul li i {
 /* descriptions */
 
 .descriptions div {
-    display: none;
+    display: block;
     font-family: 'pokemon_solidnormal', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -208,10 +211,12 @@ ul li i {
 
 .positive-effect {
     color: #3b994e;
+    text-align: left;
 }
 
 .negative-effect {
     color: #ab1f23;
+    text-align: right;
 }
 
 
@@ -297,19 +302,23 @@ ul li i {
     }
 }
 
+
 /*Media Queries*/
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .pokemon-type-card {
         width: calc(50% - 20px);
         /* Adjusts card width for smaller screens */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .pokemon-type-card {
         width: calc(100% - 20px);
         /* Adjusts card width for even smaller screens */
+        .descriptions div {
+            font-size: 16px;
+        }
     }
 }
 
@@ -322,3 +331,13 @@ ul li i {
         }
     }
 }
+
+
+/* commented out to resolve touch issues */
+
+
+/*@media screen and (max-width: 970px) {
+    .pokemon-type-card {
+        pointer-events: none;
+    }
+}/
