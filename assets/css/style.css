@@ -108,7 +108,7 @@ ul li i {
 
 @font-face {
     font-family: 'pokemon_solidnormal';
-    src: url('/assets/font/pokemon_solid-webfont.woff2') format('woff2'), url('/assets/font/pokemon_solid-webfont.woff') format('woff');
+    src: url('assets/font/pokemon_solid-webfont.woff2') format('woff2'), url('assets/font/pokemon_solid-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
