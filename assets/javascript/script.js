@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 // Get all cards
@@ -37,3 +38,16 @@ cards.forEach(function(card) {
         }
     });
 });
+=======
+function showSidebar(){
+    console.log("I am running the showsidebar function");
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar(){
+    console.log("I am closing the sidebar");
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+>>>>>>> 820c58935ffe1a4b368d2a7aa9ee0112df9164b9
