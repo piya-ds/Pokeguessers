@@ -332,12 +332,6 @@ ul li i {
     }
 }
 
-<<<<<<< HEAD
-@media (hover: hover) {
-    background-color: ;: blue;
-}
-=======
-
 /* commented out to resolve touch issues */
 
 
@@ -346,4 +340,3 @@ ul li i {
         pointer-events: none;
     }
 }/
->>>>>>> 698ecf676df47f4f1fe5edc654aa1db17ca43f1e
