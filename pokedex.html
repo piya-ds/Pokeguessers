@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pockeguessers</title>
+    <title>Pokedex</title>
+
+     <!-- Font Awesome Icons -->
+     <script src="https://kit.fontawesome.com/51b9bf2f41.js" crossorigin="anonymous"></script>
+     <!------------------------>
+
+    <link rel="stylesheet" href="assets/css/pokedex.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/51b9bf2f41.js" crossorigin="anonymous"></script>
-    <!------------------------>
-
 </head>
-
 <body>
-    <!--Nav Bar ----------------------------------------->
-    <nav>
+     <!--Nav Bar ----------------------------------------->
+     <nav>
         <!-- SideBar Navigation Bar-->
         <!-- Hidden by default in CSS and set to Display by clicking sidebar icon when visible-->
         <ul class="sidebar">
@@ -36,29 +35,24 @@
             <li class="sidebarbutton" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
     </nav>
-    <!-- Main Content ----------------------------------->
-    <main>
-        <!--- Hero with banner Image-->
-        <div class="hero-wrapper">
-        <div class="hero">
-            <div class="hero-column1">
-                <h1>Test your pokemon knowledge!</h1>
-                <p>Pokeguesser was created as a hackathon project to display the info of the original 151 pokemon and
-                    their types, and test your knowledge on them!</p>
-                <p> Ready to get started? Enter your username and have a go at our Guess that Pokemon Quiz!</p>
-                <form>
-                    <input type="text" id="username" name="username" placeholder="Enter Username" >
-                    <br>
-                    <input type ="button" onclick="" id="usernamebutton" value="Submit"/>
-                </form>
+
+    <div id="pokedex-content-wrapper">
+    <div id="pokedex-content">
+        <!---Lefthand Display -->
+        <div id="pokemon-info">
+            <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            <div id="pokemon-types">
+                <span class = type-box grass>GRASS</span><span class ="type-box poison">POISON</span>
             </div>
-            <div class="hero-column2">
-                <img src="assets/images/hero2.png" alt ="heroimage">
-            </div>
+            <div id="pokemon-description"></div>
+        </div>
+        <!--Righthand Display, display list of pokemon -->
+        <div id="pokemon-list">
+
         </div>
     </div>
+    </div>
 
-    </main>
     <!-- Footer ----------------------------------------->
     <footer>
         <div class="footer-content">
@@ -74,8 +68,9 @@
 
         </div>
     </footer>
+
     <!-- Scripts ---------------------------------------->
     <script src="assets/javascript/script.js"></script>
+   <script src="assets/javascript/pokedex.js"></script> 
 </body>
-
 </html>
