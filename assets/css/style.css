@@ -98,6 +98,27 @@ ul li i{
     display: none;
 }
 
+.hero{
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Content */
+.hero-container{
+    width: 50%;
+    height: 50%;
+    background-color: Blue;
+    display: flex;
+}
+
+.hero-img{
+    background-color:red;
+    width: 50%;
+    height: 50%;
+}
+
 /* Footer */
 footer {
 
@@ -147,3 +168,4 @@ footer {
     }
 
 }
+/*-------------------------------------/
