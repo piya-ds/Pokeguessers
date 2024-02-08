@@ -45,11 +45,7 @@ nav a {
 }
 
 nav a:hover {
-<<<<<<< HEAD
-    background-color: #f0f0f0;
-=======
     background-color: #a8a8a8;
->>>>>>> f3928af34d6674b0cc49fac9901d6c843e5ea125
 }
 
 nav li:first-child {
@@ -60,17 +56,6 @@ nav li:first-child {
 /* Temporary Logo styling -----------------------*/
 
 nav li:first-child img {
-<<<<<<< HEAD
-    height: 50px;
-    width: 50px;
-    padding-right: 10px;
-}
-
-ul li i {
-    font-size: larger;
-}
-
-=======
     height: 45px;
     width: 45px;
     padding-right: 5px;
@@ -83,14 +68,10 @@ nav li:first-child:hover {
     filter: invert(1);
 }
 
-
-/*--------------------------------*/
-
 ul li i {
     font-size: larger;
 }
 
->>>>>>> f3928af34d6674b0cc49fac9901d6c843e5ea125
 .sidebar {
     position: fixed;
     top: 0;
@@ -265,9 +246,6 @@ ul li i {
 }
 
 
-<<<<<<< HEAD
-/* Media Query -----------------------*/
-=======
 /* Footer */
 
 .footer-content {
@@ -314,7 +292,6 @@ ul li i {
         display: block;
     }
 }
->>>>>>> f3928af34d6674b0cc49fac9901d6c843e5ea125
 
 @media (max-width: 768px) {
     .pokemon-type-card {
@@ -333,12 +310,9 @@ ul li i {
 @media screen and (min-width: 768px) {
     .pokemon-type-card:hover .descriptions {
         display: block;
-<<<<<<< HEAD
-=======
         /*Hide Sidebar button on default screens larger than 800px*/
         .sidebarbutton {
             display: none;
         }
->>>>>>> f3928af34d6674b0cc49fac9901d6c843e5ea125
     }
 }
