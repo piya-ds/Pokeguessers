@@ -21,7 +21,7 @@
         <ul class="sidebar">
             <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
             <li><a href="#">Pokemon Guess Quiz </a></li>
-            <li><a href="#">Pokemon Types Quiz</a></li>
+            <li><a href="apiquiz.html">Pokemon Types Quiz</a></li>
             <li><a href="typechart.html">Pokemon Types</a></li>
             <li><a href="#">Pokedex</a></li>
         </ul>
@@ -30,7 +30,7 @@
         <ul>
             <li><a href="index.html"><img src="assets/images/pokeball-icon.png">Pokeguessers</a></li>
             <li class="hideOnMobile"><a href="#">Pokemon Guess Quiz </a></li>
-            <li class="hideOnMobile"><a href="#">Pokemon Types Quiz</a></li>
+            <li class="hideOnMobile"><a href="apiquiz.html">Pokemon Types Quiz</a></li>
             <li class="hideOnMobile"><a href="typechart.html">Pokemon Types</a></li>
             <li class="hideOnMobile"><a href="#">Pokedex</a></li>
             <li class="sidebarbutton" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
@@ -39,17 +39,22 @@
     <!-- Main Content ----------------------------------->
     <main>
         <!--- Hero with banner Image-->
-        <div class="row">
-            <div class="column1">
+        <div class="hero-wrapper">
+        <div class="hero">
+            <div class="hero-column1">
                 <h1>Test your pokemon knowledge!</h1>
                 <p>Pokeguesser was created as a hackathon project to test your knowledge of the original 151 pokemon and
                     their types!</p>
+                <p> Ready to get started? Enter your username and start completing Quizzes!</p>
                 <form>
-                    <input type="text" id="username" name="username">
-                    <label for ></label>
+                    <input type="text" id="username" name="username" value="Username" >
                 </form>
             </div>
+            <div class="hero-column2">
+                <img src="assets/images/hero2.png" alt ="heroimage">
+            </div>
         </div>
+    </div>
 
     </main>
     <!-- Footer ----------------------------------------->
