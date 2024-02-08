@@ -90,6 +90,10 @@ ul li i {
     align-items: flex-start;
     justify-content: flex-start;
 }
+/*Hide Sidebar button on default screens larger than 800px*/
+.sidebarbutton{
+    display: none;
+}
 
 .sidebar li {
     width: 100%;
