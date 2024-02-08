@@ -68,9 +68,6 @@ nav li:first-child:hover {
     filter: invert(1);
 }
 
-
-/*--------------------------------*/
-
 ul li i {
     font-size: larger;
 }
@@ -90,8 +87,11 @@ ul li i {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+
 /*Hide Sidebar button on default screens larger than 800px*/
-.sidebarbutton{
+
+.sidebarbutton {
     display: none;
 }
 
@@ -166,7 +166,7 @@ ul li i {
 /* makes the gradient work */
 
 .gradient-text {
-    background: -webkit-linear-gradient(right, #0075be, #ffcc00, #ffcc00, #0075be);
+    background: -webkit-linear-gradient(right, #388adc, #fff, #fff, #388adc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'pokemon_solidnormal', Arial, Helvetica, sans-serif;
@@ -178,7 +178,7 @@ ul li i {
 /* descriptions */
 
 .descriptions div {
-    display: none;
+    display: block;
     font-family: 'pokemon_solidnormal', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -211,10 +211,12 @@ ul li i {
 
 .positive-effect {
     color: #3b994e;
+    text-align: left;
 }
 
 .negative-effect {
     color: #ab1f23;
+    text-align: right;
 }
 
 
@@ -254,8 +256,6 @@ ul li i {
 
 
 /* Footer */
-
-footer {}
 
 .footer-content {
     background-color: #f5f5f5;
@@ -302,24 +302,29 @@ footer {}
     }
 }
 
+
 /*Media Queries*/
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .pokemon-type-card {
         width: calc(50% - 20px);
         /* Adjusts card width for smaller screens */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .pokemon-type-card {
         width: calc(100% - 20px);
         /* Adjusts card width for even smaller screens */
+        .descriptions div {
+            font-size: 16px;
+        }
     }
 }
 
 @media screen and (min-width: 768px) {
     .pokemon-type-card:hover .descriptions {
+        display: block;
         /*Hide Sidebar button on default screens larger than 800px*/
         .sidebarbutton {
             display: none;
@@ -327,6 +332,18 @@ footer {}
     }
 }
 
+<<<<<<< HEAD
 @media (hover: hover) {
     background-color: ;: blue;
 }
+=======
+
+/* commented out to resolve touch issues */
+
+
+/*@media screen and (max-width: 970px) {
+    .pokemon-type-card {
+        pointer-events: none;
+    }
+}/
+>>>>>>> 698ecf676df47f4f1fe5edc654aa1db17ca43f1e

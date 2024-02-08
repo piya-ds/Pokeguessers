@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/apiquiz.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container">
+        <section>
+            <div id ="userdetails">
+                <div id="user-name">
+                    <p class="user">Hello, <span class="username">UserName</span></p>
+                </div>
+                <div id="progress-bar">
+                    <div id="progressbarfull"></div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="card">
+            <h2 id="header">Who's that pokeman?</h2>
+            <img id ="pokemanimg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg" alt="Pockeman Image">
+            <div id="options" class="options-container">
+                <button class="choice">option 1</button>
+                <button class="choice">option 2</button>
+                <button class="choice">option 3</button>
+                <button class="choice">option 4</button>
+            </div>
+            <div id="lives">
+                <span id="hearts">
+                    <i  class="fa-solid fa-heart"></i>
+                    <i  class="fa-solid fa-heart"></i>
+                    <i  class="fa-solid fa-heart"></i>
+                </span>
+            </div>
+            <div id="submitquiz">
+                <button class="finishquiz">Finish</button>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
