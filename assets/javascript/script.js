@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3dde6300a91ac3a4e144dc7e322947131caa6492
+>>>>>>> 003994fbaa5e872eb68f622904a2cf90e821a81d
 'use strict';
 
 // Get all cards
@@ -36,4 +43,25 @@ cards.forEach(function(card) {
             descriptions.classList.toggle('show-descriptions');
         }
     });
+<<<<<<< HEAD
 });
+=======
+<<<<<<< HEAD
+});
+=======
+});
+=======
+function showSidebar(){
+    console.log("I am running the showsidebar function");
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar(){
+    console.log("I am closing the sidebar");
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+>>>>>>> 820c58935ffe1a4b368d2a7aa9ee0112df9164b9
+>>>>>>> 3dde6300a91ac3a4e144dc7e322947131caa6492
+>>>>>>> 003994fbaa5e872eb68f622904a2cf90e821a81d
