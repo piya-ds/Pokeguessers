@@ -293,6 +293,8 @@ ul li i {
     }
 }
 
+/*Media Queries*/
+
 @media (max-width: 768px) {
     .pokemon-type-card {
         width: calc(50% - 20px);

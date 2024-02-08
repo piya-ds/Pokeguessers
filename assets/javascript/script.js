@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3dde6300a91ac3a4e144dc7e322947131caa6492
->>>>>>> 003994fbaa5e872eb68f622904a2cf90e821a81d
->>>>>>> f3928af34d6674b0cc49fac9901d6c843e5ea125
 'use strict';
-
-// Get all cards
-var cards = document.querySelectorAll('.pokemon-type-card');
 
 // Function to handle mouseenter event
 function handleMouseEnter(event) {
@@ -46,17 +33,8 @@ cards.forEach(function(card) {
             descriptions.classList.toggle('show-descriptions');
         }
     });
-<<<<<<< HEAD
-});
-=======
-<<<<<<< HEAD
-});
-=======
-<<<<<<< HEAD
-});
-=======
-});
-=======
+ main
+ 
 function showSidebar(){
     console.log("I am running the showsidebar function");
     const sidebar = document.querySelector('.sidebar');
@@ -68,7 +46,3 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
 }
->>>>>>> 820c58935ffe1a4b368d2a7aa9ee0112df9164b9
->>>>>>> 3dde6300a91ac3a4e144dc7e322947131caa6492
->>>>>>> 003994fbaa5e872eb68f622904a2cf90e821a81d
->>>>>>> f3928af34d6674b0cc49fac9901d6c843e5ea125
