@@ -15,6 +15,54 @@ body {
 }
 
 
+/* Hero header Styling -------------------*/
+
+.hero-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* 50 + 50px accounting for fixed footer*/
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+    /*border: solid 1px red;*/
+}
+
+.hero .hero-column1 {
+    padding-right: 50px;
+    /*border: solid 1px red;*/
+}
+
+.hero .hero-column2 {
+    padding-right: 50px;
+    /*border: solid 1px red;*/
+}
+
+.hero-column1 h1 {
+    font-size: xxx-large;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-column1 p {
+    font-size: x-large;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.hero-column2 img {
+    width: auto;
+    overflow: hidden;
+}
+
+
 /* Nav Bar Styling -----------------------*/
 
 nav {
@@ -106,6 +154,8 @@ ul li i {
 
 /* Footer */
 
+footer {}
+
 .footer-content {
     background-color: #f5f5f5;
     position: fixed;
@@ -135,3 +185,96 @@ ul li i {
     align-items: center;
     color: #000;
 }
+
+
+/* Media Queries -----------------------*/
+
+
+/*Hide Horizontal nav bar on mobile and display sidebar button*/
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .sidebarbutton {
+        display: block;
+    }
+}
+
+@media(max-width:1024px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+    .hero-column2 {
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .hero-column2 img {
+        width: 100%;
+        align-self: center;
+    }
+    .hero-column1 {
+        text-align: center;
+    }
+    .hero .hero-column1 {
+        padding-right: 0px;
+    }
+    .hero .hero-column2 {
+        padding-right: 0px;
+    }
+}
+
+@media(max-width:375px) {
+    .hero-column1 h1 {
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+    .hero-column1 p {
+        font-size: medium;
+        margin-bottom: 20px;
+    }
+    .hero-wrapper {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+}
+
+
+/*Media Queries for Pokemon Cards*/
+
+@media (max-width: 968px) {
+    .pokemon-type-card {
+        width: calc(50% - 20px);
+        /* Adjusts card width for smaller screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .pokemon-type-card {
+        width: calc(100% - 20px);
+        /* Adjusts card width for even smaller screens */
+        .descriptions div {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pokemon-type-card:hover .descriptions {
+        display: block;
+        /*Hide Sidebar button on default screens larger than 800px*/
+        .sidebarbutton {
+            display: none;
+        }
+    }
+}
+
+
+/* commented out to resolve touch issues */
+
+
+/*@media screen and (max-width: 970px) {
+    .pokemon-type-card {
+        pointer-events: none;
+    }
+}/
