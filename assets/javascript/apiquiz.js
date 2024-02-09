@@ -49,12 +49,16 @@ function getRandomPokemonId(){
 
 async function loadQuestionWithOption(){
 
-    // if (showLoading) {
+    // if (showLoading ) {
     //     showLoadingWindow();
     //    // hidePuzzleWindow();
     //   }
     
 
+    if(count == 10){
+
+        hidePuzzleWindow();
+    }
     //------check if the pokemon question is already played
 
     let pokemonId = getRandomPokemonId();
@@ -192,10 +196,10 @@ function shuffleOptions(array){
 //     mainContainer.classList.add("show");
 //   }
   
-//   //-------------------Hide puzzle window
-//   function hidePuzzleWindow() {
-//     mainContainer.classList.add("hide");
-//   }
+  //-------------------Hide puzzle window
+  function hidePuzzleWindow() {
+    mainContainer.classList.add("hide");
+  }
   
   //---------------show confetti
 
