@@ -39,10 +39,10 @@ Welcome to Pokeguesser - your one stop quiz about Pokemons! Our site is designed
 ## Ideation
 
 ### Collaborative Ideation Doc
-https://drive.google.com/drive/folders/13JOSnCfXt0f5JJC7kh8--VlJ4cqFHQ7d?usp=sharing
+https://docs.google.com/document/d/1TSZwyqUk3NbwUJN5j4XrqqdwQ3Qt7AGuiTdutJdE4II/edit?usp=sharing
 
 ### Wireframes
-https://imgur.com/a/QH3d7dY"
+https://imgur.com/a/QH3d7dY
 
 ### User Stories
 
@@ -71,6 +71,7 @@ https://imgur.com/a/QH3d7dY"
 - Fixed sidebar not working properly
 - Fixed main heading not displaying properly on mobile
 - Fixed an issue where question and score would continue past the set limit meaning the quiz couldn't end
+- Issue with Pokemon Types on pokedex not loading initially the background colors. Fixed via html bug edits.
 
 ### Homepage Taglines
 
@@ -94,6 +95,7 @@ https://imgur.com/a/QH3d7dY"
 
 
 ## Meeting Notes 
+---------------------------------------------------------------------------
 02/02/2024
 1st Meeting:
 Discussion of which brief we want to do: Settled on either Brief 1 Rock Paper Scissors… or 2 Quiz
@@ -139,10 +141,6 @@ Testing commenting the code.
 Optional. Chat about roles & responsibilities
 Will be discussing this, once site + wireframing is figured out.
 Type effective page -> chance to add nice hover effects and modal effects. Then base a quiz around it.
-
-
-
-
 
 06/02/2024
 Discussed plan of action: User stories (simple) and MOSCOW approach:
@@ -212,9 +210,7 @@ Hackathon day 1
 Hackathon day 2
 - Focused on project implementation and fixes.
 - Delegated tasks and reduced scope appropriately
-
-
-
+---------------------------------------------------------------------------
 ## Acknowledgments
 
 ## References
