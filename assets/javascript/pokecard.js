@@ -37,3 +37,32 @@ cards.forEach(function(card) {
         }
     });
 });
+
+// Get all cards
+var cards = document.querySelectorAll('.pokemon-type-card');
+
+// Function to toggle darken class on click
+function toggleDarken(event) {
+    var card = event.currentTarget;
+    card.classList.toggle('darken');
+}
+
+// Adds event listeners to each card
+cards.forEach(function(card) {
+    // Add event listener for click on mobile devices
+    card.addEventListener('click', toggleDarken);
+});
+
+// Footer
+const footer = document.querySelector('footer');
+
+
+function handleScroll() {
+    if (window.scrollY > 0 && window.innerHeight + window.scrollY < document.body.offsetHeight) {
+        footer.classList.add('hide-footer');
+    } else {
+        footer.classList.remove('hide-footer');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
