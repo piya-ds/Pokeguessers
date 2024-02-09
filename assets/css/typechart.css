@@ -1,0 +1,237 @@
+/* Card Type Styling -----------------------*/
+
+@font-face {
+    font-family: 'pokemon_solidnormal';
+    src: url('../font/pokemon_solid-webfont.woff2') format('woff2'), url('../font/pokemon_solid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pokemon-type-card {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    border: 2px solid #ffcc00;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 25px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease-in;
+}
+
+.type-icon {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.type-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s ease-in;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.3s ease-in;
+}
+
+.pokemon-type-card:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* show descriptions whilst hovering */
+
+.pokemon-type-card:hover .descriptions div {
+    display: block;
+    -webkit-background-clip: unset;
+}
+
+.pokemon-type-card.darken {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* makes the gradient work */
+
+.gradient-text {
+    background: -webkit-linear-gradient(right, #fff, #388adc, #388adc, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'pokemon_solidnormal', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* descriptions */
+
+.descriptions div {
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 19px;
+    animation: slide-in 0.3s ease forwards;
+}
+
+.descriptions {
+    display: none;
+}
+
+.show-descriptions {
+    display: block;
+}
+
+
+/* positive or negative effects colouring of descriptions */
+
+.positive-effect {
+    color: #3b994e;
+    text-align: left;
+}
+
+.negative-effect {
+    color: #ab1f23;
+    text-align: right;
+}
+
+
+/* positions of descriptions */
+
+.top-left {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.top-right {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+
+/* animation */
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* prevents footer from overlapping content and adds space between content and footer */
+
+main {
+    padding-bottom: 75px;
+}
+
+
+/* Footer -----------------------*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    /* Added opacity transition */
+}
+
+.hide-footer {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/* Media Queries -----------------------*/
+
+
+/*Hide Horizontal nav bar on mobile and display sidebar button*/
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .sidebarbutton {
+        display: block;
+    }
+}
+
+
+/*Hide Sidebar button on default screens larger than 768px*/
+
+@media screen and (min-width: 768px) {
+    .pokemon-type-card:hover .descriptions {
+        display: block;
+        .sidebarbutton {
+            display: none;
+        }
+    }
+}
+
+
+/* Adjusts card width for smaller screens */
+
+@media (max-width: 968px) {
+    .pokemon-type-card {
+        width: calc(50% - 20px);
+    }
+}
+
+
+/* Adjusts card width for even smaller screens */
+
+@media (max-width: 800px) {
+    .pokemon-type-card {
+        width: calc(100% - 20px);
+        .descriptions div {
+            font-size: 16px;
+        }
+    }
+}
+
+
+/* commented out below to resolve touch issues */
+
+
+/*@media screen and (max-width: 970px) {
+    .pokemon-type-card {
+        pointer-events: none;
+    }
+}/

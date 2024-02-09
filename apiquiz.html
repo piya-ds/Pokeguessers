@@ -7,23 +7,44 @@
     <!-- font awsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/apiquiz.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+     <!--Nav Bar ----------------------------------------->
+     <nav>
+        <!-- SideBar Navigation Bar-->
+        <!-- Hidden by default in CSS and set to Display by clicking sidebar icon when visible-->
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
+            <li><a href="apiquiz.html">Pokemon Quiz </a></li>
+            <li><a href="typechart.html">Pokemon Types</a></li>
+            <li><a href="pokedex.html">Pokedex</a></li>
+        </ul>
+
+        <!-- Standard Horizontal Navigation Bar -->
+        <ul>
+            <li>
+                <a href="index.html"><img src="assets/images/pokeball-icon.png">Pokeguessers</a>
+            </li>
+            <li class="hideOnMobile"><a href="apiquiz.html">Pokemon Quiz </a></li>
+            <li class="hideOnMobile"><a href="typechart.html">Pokemon Types</a></li>
+            <li class="hideOnMobile"><a href="pokedex.html">Pokedex</a></li>
+            <li class="sidebarbutton" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    
     <div id="container">
         <section>
             <div id ="userdetails">
                 <div id="user-name">
                     <p class="user">Hello, <span class="username">UserName</span></p>
                 </div>
-                <div id="progress-bar">
-                    <div id="progressbarfull"></div>
-                </div>
             </div>
         </section>
         
         <div id="card">
-            <h2 id="header">Who's that pokemon?</h2>
+            <h2 id="header">Who's that Pokemon!?</h2>
             <div id="imageContainer">
                 <img id ="pokemonimg"  alt="Pockeman Image">
             </div>
@@ -32,18 +53,33 @@
             </div>
             <div id="pointsContainer">
                 <h4 id="points">
-                    Questions: <span id="questionCount">0</span>/<span id="totalCount">10</span>
-                    Points: <span id="pointsValue">0</span>/<span id="totalCount">10</span>
+                    <span>Questions:</span><span id="questionCount">0</span>/<span id="totalCount">10</span>
+                    <span>Points:</span><span id="pointsValue">0</span>/<span id="totalCount">10</span>
                 </h4> 
             </div>
         
             <div id="submitquiz">
-                <button type="submit" id="finishquiz">Finish</button>
+                <button id="finishquiz">Finish</button>
             </div>
         </div>
-        <div></div>
     </div>
+    <!-- Footer ----------------------------------------->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts-->
     <script src="assets/javascript/apiquiz.js"></script>
+    <script src="assets/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 </html>
