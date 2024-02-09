@@ -42,7 +42,7 @@ Welcome to Pokeguesser - your one stop quiz about Pokemons! Our site is designed
 https://drive.google.com/drive/folders/13JOSnCfXt0f5JJC7kh8--VlJ4cqFHQ7d?usp=sharing
 
 ### Wireframes
-<a href="https://imgur.com/a/QH3d7dY"></a>
+https://imgur.com/a/QH3d7dY"
 
 ### User Stories
 
