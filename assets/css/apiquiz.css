@@ -11,11 +11,11 @@
 
 body {
     
-    min-height: 100vh;
+    /*min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    background: #c6caf1;
+    background: #c6caf1;*/
 }
 #container{
     display: flex;
@@ -23,14 +23,22 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;
 
 }
 
 /* --------------------------------------user section------------------- */
 #userdetails{
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;*/
+    width: 200px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    align-content: center;
+    padding: 2px 2px;
 }
 #user-name{
     text-align: center;
