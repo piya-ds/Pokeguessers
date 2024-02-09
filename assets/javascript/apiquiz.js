@@ -5,8 +5,12 @@ const progressbarfull = document.getElementById('progressbarfull');
 const pockemonimg = document.getElementById('pokemonimg');
 const optionsContainer = document.getElementById('options');
 const mainContainer = document.getElementById('container');
-const loadingcontainer = document.getElementById('submitquiz');
-const submitButton = document.getElementById('finishquiz')
+//const loadingcontainer = document.getElementById('submitquiz');
+const submitButton = document.getElementById('finishquiz');
+const questionCount = document.getElementById('questionCount');
+const pointsCount = document.getElementById('pointsValue');
+
+
 
 
 
@@ -142,6 +146,8 @@ function checkAnswer(isCorrect, event){
 
     count++;
 
+    console.log(count);
+
     if(isCorrect){
 
         pass++;
@@ -154,18 +160,35 @@ function checkAnswer(isCorrect, event){
 
     //---------------------load question with 1 sec delay
 
-    setTimeout(()=>{
+    if(count < total){
 
-        showLoading = true;
-        loadQuestionWithOption();
-    },1000);
+        setTimeout(()=>{
 
-    submitButton.addEventListener('onClick', () => {
+            showLoading = true;
+            loadQuestionWithOption();
+        },1000);
+    }
+    else{
+        hidePuzzleWindow();
+    }
 
+    questionCount.innerHTML = count;
+    pointsCount.innerHTML = pass;
+
+    submitButton.addEventListener('click', () => {
+
+        console.log('clicked');
         if(pass >= 7){
            showConfetti();
         }
-    })
+        /* run reset quiz function resetquiz()*/ 
+        count = 0;
+        pass = 0;
+        questionCount.innerHTML = count;
+        pointsCount.innerHTML = pass;
+        showPuzzleWindow();
+        loadQuestionWithOption();
+     })
 }
 
 /**---------------- function to shuffle option so that correct option should not display at first place */
@@ -189,15 +212,16 @@ function shuffleOptions(array){
 //     //loadingContainer.classList.add("show");
 //   }
   
-//   //-------------- Show puzzle window
-//   function showPuzzleWindow() {
-//    // loadingContainer.classList.remove("show");
-//     mainContainer.classList.remove("hide");
-//     mainContainer.classList.add("show");
-//   }
+  //-------------- Show puzzle window
+  function showPuzzleWindow() {
+   // loadingContainer.classList.remove("show");
+    mainContainer.classList.remove("hide");
+    mainContainer.classList.add("show");
+  }
   
   //-------------------Hide puzzle window
   function hidePuzzleWindow() {
+    mainContainer.classList.remove("show");
     mainContainer.classList.add("hide");
   }
   
