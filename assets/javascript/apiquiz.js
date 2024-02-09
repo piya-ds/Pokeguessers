@@ -5,7 +5,8 @@ const progressbarfull = document.getElementById('progressbarfull');
 const pockemonimg = document.getElementById('pokemonimg');
 const optionsContainer = document.getElementById('options');
 const maincontainer = document.getElementById('container');
-const loadingcontainer = document.getElementById('loadingContainer');
+const loadingcontainer = document.getElementById('submitquiz');
+const submitButton = document.getElementById('finishquiz')
 
 
 
@@ -14,7 +15,7 @@ const loadingcontainer = document.getElementById('loadingContainer');
 const usedPokemonId = [];
 let showLoading = false;
 let count = 0;
-let total = 5;
+let total = 10;
 let pass = 0;
 
 // --------------------function to fetch pockeman
@@ -22,7 +23,7 @@ let pass = 0;
 
 async function fetchPokemonById(id){
 
-    //showLoading = true;
+    showLoading = true;
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const data = await response.json();
     return data;
@@ -47,6 +48,12 @@ function getRandomPokemonId(){
 //  test();
 
 async function loadQuestionWithOption(){
+
+    // if (showLoading) {
+    //     showLoadingWindow();
+    //    // hidePuzzleWindow();
+    //   }
+    
 
     //------check if the pokemon question is already played
 
@@ -80,6 +87,11 @@ async function loadQuestionWithOption(){
 
         options.push(randomPokemonOption);
         optionsId.push(randomPokemanId);
+
+        if (options.length === 4) {
+            showLoading = false;
+        }
+
     
     }
     
@@ -98,13 +110,21 @@ async function loadQuestionWithOption(){
       button.onclick = (event) => checkAnswer(option === pokemon.name, event);
       optionsContainer.appendChild(button);
     });
-  
+    
+    //----------Hide / Unhide HTML elements based on async status
 
+    // if (!showLoading) {
+    //     hideLoadingWindow();
+    //     showPuzzleWindow();
+    //   }
+    
+      
 }
 
 loadQuestionWithOption();
 
 function checkAnswer(isCorrect, event){
+
 
     //-----------check button if it is selected
 
@@ -125,20 +145,64 @@ function checkAnswer(isCorrect, event){
     }
     else{
 
-        event.target.classList.add('incorrect');
+        event.target.classList.add('wrong');
     }
 
     //---------------------load question with 1 sec delay
 
     setTimeout(()=>{
 
+        showLoading = true;
         loadQuestionWithOption();
     },1000);
+
+    submitButton.addEventListener('onClick', () => {
+
+        if(pass >= 7){
+           showConfetti();
+        }
+    })
 }
 
 /**---------------- function to shuffle option so that correct option should not display at first place */
 
 function shuffleOptions(array){
-    
+
     return array.sort(() => Math.random() - 0.5); 
 }
+
+// -------------Hide loading window
+
+// function hideLoadingWindow() {
+
+//     loadingcontainer.classList.add("hide");
+//   }
+
+  // ----------------Show loading window
+// function showLoadingWindow() {
+//     mainContainer.classList.remove("show");
+//     //loadingContainer.classList.remove("hide");
+//     //loadingContainer.classList.add("show");
+//   }
+  
+//   //-------------- Show puzzle window
+//   function showPuzzleWindow() {
+//    // loadingContainer.classList.remove("show");
+//     mainContainer.classList.remove("hide");
+//     mainContainer.classList.add("show");
+//   }
+  
+//   //-------------------Hide puzzle window
+//   function hidePuzzleWindow() {
+//     mainContainer.classList.add("hide");
+//   }
+  
+  //---------------show confetti
+
+  function showConfetti(){
+    const ready = () => {
+        setTimeout(function() {
+            confetti.start();
+        },1000);
+    }
+  }
