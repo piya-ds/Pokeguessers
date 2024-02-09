@@ -1,110 +1,280 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Cian Thornhill,
+# Project: Pokemon Guesser App (Pokeguesser)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Description
+Welcome to Pokeguesser - your one stop quiz about Pokemons! Our site is designed to teach new people to pokemon and already familiar users can check their knowledge from 151 pokemon. Take a quiz if you are brave or you just want to see how it works, or get to know each type of the pokemon ahead of taking a quiz. Whether you are a complete newbie or a series veteran, our site is ready to test your knowledge about pokemons no matter what. Start the quiz today, and find out how much you really know!
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Team members
 
-## Gitpod Reminders
+- [Cian] - Team Lead
+- [Priyanka] - Developer
+- [Vedran] - Developer
+- [Jean] - team member for ideation phase
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Technologies used
 
-`python3 -m http.server`
+- Github
+- Gitpod
+- Visual Studio Code
+- Chat GPT - Chat GPT: https://chat.openai.com
+- PokeAPI - RESTFUL API: https://pokeapi.co/api/v2
+- HTML 5 /JS /CSS 3 /API
+- JS library: https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js
 
-A blue button should appear to click: _Make Public_,
+## Website Structure
+### Pages
 
-Another blue button should appear to click: _Open Browser_.
+- Index
+- Pokemon Types Quiz
+- Pokemon Types
+- Pokedex
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Architecture
 
-A blue button should appear to click: _Make Public_,
+- Landing page includes hero image and links to other destinations
+- consitent and clean navbar and footer and sidebar (navbar but in hamburger menu for smaller devices)
+- Out of 4 pages total, 3 have detailed descriptions about item contents on the page, and all have small images or logos of the items from/related to the pages 
 
-Another blue button should appear to click: _Open Browser_.
+## Ideation
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Collaborative Ideation Doc
+https://docs.google.com/document/d/1TSZwyqUk3NbwUJN5j4XrqqdwQ3Qt7AGuiTdutJdE4II/edit?usp=sharing
 
-To log into the Heroku toolbelt CLI:
+### Wireframes
+https://imgur.com/a/QH3d7dY
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### User Stories
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+ - I want to play a Pokémon quiz
+ - I want the site to have a visually appealing and intuitive interface
+ - I want to be able to start a new Pokémon quiz
+ - I want Immediate feedback on my answer
+ - I want questions to include Images of the Pokemon
+ - I want to be presented with multiple-choice questions
+ - I want to finish a quiz and see my final score
+ - I want the option to play the quiz in different difficulty levels
+ - I'm unfamiliar with pokemon, I want to learn what I need to know for the quizzes
+ - I want to see my current score as I progress through the quiz
+ - I want to see how many questions are remaining
+ - Receive a virtual bade or reward for completing the quiz successfully
+ - I want to be able to skip a question if I'm unsure and come back to it later
+ - Review the questions I answered incorrectly after completing the quiz
+ - Share my quiz results on social media
 
-------
+### Bugs / issues
 
-## Release History
+- Repeating merge conflicts between separate forks, main repo and git issues overall (solved eventually thanks to Martin)
+- To avoid further issues we've decided to separate css and js files for each of the pages to keep it more simple per page. This enabled us to catch things getting out of hand faster and not messing up other parts of pages
+- An issue where at 968px width cards would show up as one per row and then at 768px would go back to 2 per row
+- Fixed touch not working on mobile devices by commenting out one of media query's
+- Fixed sidebar not working properly
+- Fixed main heading not displaying properly on mobile
+- Fixed an issue where question and score would continue past the set limit meaning the quiz couldn't end
+- Issue with Pokemon Types on pokedex not loading initially the background colors. Fixed via html bug edits.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Homepage Taglines
 
-**September 20 2023:** Update Python version to 3.9.17.
+- "Ready to check your pokemon knowledge with our quiz?"
+- "Think you know every pokemon from generation 1? Think again! (you probably don't)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Future Improvments
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- add levels to the quiz which users can progress through
+- we'd like to add pokemon types quiz which challanges users knowledge of pokemon types
+- implement submiting the username to the site (username would be displayed across pages)
+- provide users with better quiz results feedback (eg. summary of quiz questions and answers provided)
+- reward users with badges (displayed via html upon completion of quiz levels)
+- more variation in available quizes
+- overall improvments to styling and site
+  
+- user profile page/login (further away)
+- add leaderboards, so other people could see who did better (further away)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Screenshots of the Finished Project
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Meeting Notes 
+---------------------------------------------------------------------------
+02/02/2024
+1st Meeting:
+Discussion of which brief we want to do: Settled on either Brief 1 Rock Paper Scissors… or 2 Quiz
+Discussed ideas for project
+Discussed use of API vs No API (first decision as this informed what the content of project would be [Due to sourcing appropriate API with good documentation].
+Jean had found a Pokemon API that seems very usable and suited to a quiz style project > group liked this idea but agreed we should ensure we look into more potential ideas over weekend.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+2nd Meeting:	
+Kanban board in Github, working correctly?
+Iterative board vs Normal board -> ensuring Kanban board was selected when creating Kanban.
+Discussing splitting of work
+Working in teams of 2
+Ensure initial structure and wireframing completed by group, then split off into 2 x 2 groups to develop set of pages (Priya and Jean more interested in API use)
+Current Plan of Action
+Brainstorming and finding ideas over weekend + Monday
+Finalize Idea and Team name etc. Monday
+Wireframing User stories etc. complete on Tuesday
+Wednesday: Begin Coding
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+05/02/2024
+Pokemon Quiz Idea decided on for its use of API.
+Integrate comment site structure during Mobbing of basic website structure
+Priya mentioned we should be posting videos and links we are using individually to slack 
+Jean mentioned function comments - ensuring we document.
+We discussed timeframes that we think we can complete key milestones for the project. Quiz, API etc. and we’re confident we can get it done.
+Bootstrap vs no bootstrap undecided, deciding tomorrow during wireframing after we have better idea of the site.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+05/02/2024
+Decide on a Name: 			Pokeguessers
+Decide on Wireframing Tool: 		Photoshop
+Decide on PM / Kanban:		Github Boards
+Decide on Bootstrap:			No bootstrap
+Decide on API’s:			We’re using an API for part of the project. PokeAPI
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Discuss Hackathon 1 feedback
+We suffered deciding on bootstrap or not too late. 
+Decide on bootstrap during wireframing.
+Testing commenting the code.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Optional. Chat about roles & responsibilities
+Will be discussing this, once site + wireframing is figured out.
+Type effective page -> chance to add nice hover effects and modal effects. Then base a quiz around it.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+06/02/2024
+Discussed plan of action: User stories (simple) and MOSCOW approach:
 
-------
+Plan of action:
+Stick with original 151 pokemon for simplicity and commonly known to users.
 
-## FAQ about the uptime script
+Guess the pokemon API quiz (2 or 3 lives)
+Difficulty Options:
+Level 1: 10 Questions
+Level 2: 20 Questions 
+Level 3: 50 Questions etc.
 
-**Why have you added this script?**
+Other Difficulty option ideas: 
+True or false answer choice
+Only two answers for easy quiz
+Time constraints for more difficulty
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+API attributes We can focus on grabbing: Pokemon Picture, Pokemon no., Name, Type
 
-**How will this affect me?**
+Manual Quiz 
+-	A quiz that challenges your pokemon type knowledge
+- 	20 Questions 
+- 	Randomized Type Questions
+- 	“The Fire type is strong against which of these types: (water), (rock), (electric), (ground)”
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Pokemon type Effectivity chart page so that users can understand this info before doing the quiz.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Text animation for winner?? Upon completing quiz, display animation overlay. (Party poppers, sound effect etc.)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Discussed user stories, used ChatGPT to prompt us with some and hand picked ones we felt were relevant.
 
-**So….?**
+Discussed some initial wireframing ideas, create some of our own user stories based on the ideas.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+07/02/2024
 
-**Can I opt out?**
+Found out that Jean may not be attending.
+Cian is new Team Lead.
+Need to create new project Repo and link the Kanban board over.
+How do we feel about the scope?
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Split off for now:
+Vedran: Deciding on page of project to tackle 
+Cian: Working on Nav Bar / remaking User stories / Kanban
+Priya: API Calls + Quiz 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Reconvene at 12 to figure out what we’re doing after lunch.
+Convened at 12: 
+Jean is continuing work on Pokedex and calling api
+Priya is continuing working on API Quiz
+Vedran: Working on Pokemon types, on hover page.
+Reconvening at 3pm for final meeting of the day
+Convened at 3:
+Vedran: Continuing progress and design of types page
+Priya: continuing API quiz functionality
+Cian: basic Nav bar and footer done, moving on to index
+Jean: pokedex page.
 
-**Anything more?**
+08/02/2024
+Hackathon day 1
+- Merge conflicts between vedran and main repo happening a lot
+- Resolved partially by setting corret origin within VS studio.
+- Resolution we’ve come to is keep separate css js and html files for each page as stop gap. That way we can quickly accept incoming changes to those pages as they are separate from the rest when merging.
+- Media Query breakpoints, stopping compatibility for Iphone SE 340px
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+09/02/2024
+Hackathon day 2
+- Focused on project implementation and fixes.
+- Delegated tasks and reduced scope appropriately
+---------------------------------------------------------------------------
+## Acknowledgments
 
----
+## References
+### Videos / Tutorials 
 
-Happy coding!
+- How to make a quiz: 
+  https://www.youtube.com/watch?v=PBcqGxrr9g8&t=528s
+
+- Simple Responsive Navbar: 
+  https://www.youtube.com/watch?v=U8smiWQ8Seg
+
+- Tips for simple responsive layouts
+  https://www.youtube.com/watch?v=VQraviuwbzU
+
+- Making a pokedex with js, css, html using poke api:
+  https://www.youtube.com/watch?v=56VjdqcdakQ
+
+- Building a website using an API, (Pokemon API):
+  https://www.youtube.com/watch?v=ciGkWKdmFDs
+
+- Pokemon API tutorial for beginners:
+  https://www.youtube.com/watch?v=V_cMYN3jAjg
+
+- Pokemon Card Creator:
+  https://www.youtube.com/watch?v=_JUSpgchD1I
+
+- Make a SIMPLE pokedex:
+  https://www.youtube.com/watch?v=dVtnFH4m_fE
+
+- Who’s that pokemon!? Multiple choice quiz using HTML / CSS / JS
+  https://www.youtube.com/watch?v=bGiUgKvz60s
+
+- Dealing with Hover on Mobile:
+  https://www.youtube.com/watch?v=uuluAyw9AI0
+
+- Creating a simple Hero image responsive:
+  https://www.youtube.com/watch?v=6KSKn9xIxUQ
+
+- Responsive Banner Hero + text:
+  https://www.youtube.com/watch?v=TMMvM5FTAQ0
+
+- Learn Flexbox in 8 minutes:
+  https://www.youtube.com/watch?v=phWxA89Dy94
+
+### References 
+- The loadout:
+  https://www.theloadout.com/pokemon-type-chart
+  
+- Getting a Username from a form and implementing it as a text in a <p> element.
+  https://stackoverflow.com/questions/66466217/how-to-take-a-username-from-a-form-and-put-into-a-paragraph-html
+  
+- Pokedex Quiz.
+  https://sg.portal-pokemon.com/play/pokedex/quiz
+
+- Pretty Pokedex
+  https://sg.portal-pokemon.com/play/pokedex
+
+- List of Pokemon (Simple Pokedex)
+  https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_National_Pokédex_number
+
+
+### Shoutouts
+
+- Coffee and Tea
+- Staff at Trend Micro for hosting the event and their presentation
+
+#### Big Thanks To Martin for git help
