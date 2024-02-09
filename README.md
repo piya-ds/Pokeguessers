@@ -91,7 +91,8 @@ https://imgur.com/a/QH3d7dY
 - user profile page/login (further away)
 - add leaderboards, so other people could see who did better (further away)
 
-### Screenshots of the Finished Project
+### Screenshots Gallery of the Finished Project
+- https://imgur.com/a/NI03qI2
 
 
 ## Meeting Notes 
@@ -276,5 +277,8 @@ Hackathon day 2
 
 - Coffee and Tea
 - Staff at Trend Micro for hosting the event and their presentation
+
+## Deployment
+- Deployed Via Github Pages, continuously deployed during development.
 
 #### Big Thanks To Martin for git help
