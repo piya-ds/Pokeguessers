@@ -1,6 +1,7 @@
 // -------------------getting DOM element
 
 const username = document.getElementById('username');
+const header = document.getElementById('header');
 const progressbarfull = document.getElementById('progressbarfull');
 const pockemonimg = document.getElementById('pokemonimg');
 const optionsContainer = document.getElementById('options');
@@ -9,8 +10,6 @@ const mainContainer = document.getElementById('container');
 const submitButton = document.getElementById('finishquiz');
 const questionCount = document.getElementById('questionCount');
 const pointsCount = document.getElementById('pointsValue');
-
-
 
 
 
@@ -177,9 +176,11 @@ function checkAnswer(isCorrect, event){
 
     submitButton.addEventListener('click', () => {
 
-        console.log('clicked');
+        //console.log('clicked');
         if(pass >= 7){
            showConfetti();
+           showResult();
+           
         }
         /* run reset quiz function resetquiz()*/ 
         count = 0;
@@ -187,7 +188,9 @@ function checkAnswer(isCorrect, event){
         questionCount.innerHTML = count;
         pointsCount.innerHTML = pass;
         showPuzzleWindow();
+        header.textContent = "Who's that Pokemon!?";
         loadQuestionWithOption();
+    
      })
 }
 
@@ -233,4 +236,17 @@ function shuffleOptions(array){
             confetti.start();
         },1000);
     }
+  }
+
+  //----------------show end result
+
+  function showResult(){
+
+    if(pass >= 7){
+        header.textContent = "Congratulations!!!!!!!!!!!!";
+    }
+    else{
+        header.textContent = "Sorry... Better Luck next time";
+    }
+
   }
