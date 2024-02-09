@@ -9,3 +9,8 @@ function hideSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
 }
+
+function usernameForm{
+    let username = document.getElementById('Username');
+    
+}

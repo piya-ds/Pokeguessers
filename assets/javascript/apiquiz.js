@@ -4,7 +4,7 @@ const username = document.getElementById('username');
 const progressbarfull = document.getElementById('progressbarfull');
 const pockemonimg = document.getElementById('pokemonimg');
 const optionsContainer = document.getElementById('options');
-const maincontainer = document.getElementById('container');
+const mainContainer = document.getElementById('container');
 const loadingcontainer = document.getElementById('submitquiz');
 const submitButton = document.getElementById('finishquiz')
 
