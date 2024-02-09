@@ -47,8 +47,22 @@ function toggleDarken(event) {
     card.classList.toggle('darken');
 }
 
-// Add event listeners to each card
+// Adds event listeners to each card
 cards.forEach(function(card) {
     // Add event listener for click on mobile devices
     card.addEventListener('click', toggleDarken);
 });
+
+// Footer
+const footer = document.querySelector('footer');
+
+
+function handleScroll() {
+    if (window.scrollY > 0 && window.innerHeight + window.scrollY < document.body.offsetHeight) {
+        footer.classList.add('hide-footer');
+    } else {
+        footer.classList.remove('hide-footer');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
