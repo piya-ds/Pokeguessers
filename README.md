@@ -1,110 +1,104 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Cian Thornhill,
+# Project: Pokemon Guesser App (Pokeguesser)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Description
+Welcome to Pokeguesser - your one stop quiz about Pokemons! Our site is designed to teach new people to pokemon and already familiar users can check their knowledge from 151 pokemon. Take a quiz if you are brave or you just want to see how it works, or get to know each type of the pokemon ahead of taking a quiz. Whether you are a complete newbie or a series veteran, our site is ready to test your knowledge about pokemons no matter what. Start the quiz today, and find out how much you really know!
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Team members
 
-## Gitpod Reminders
+- [Cian] - Team Lead
+- [Priyanka] - Developer
+- [Vedran] - Developer
+- [Jean] - team member for ideation phase
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Technologies used
 
-`python3 -m http.server`
+- Github
+- Gitpod
+- Visual Studio Code
+- Chat GPT - Chat GPT: https://chat.openai.com
+- PokeAPI - RESTFUL API: https://pokeapi.co/api/v2
+- HTML 5 /JS /CSS 3 /API
+- JS library: https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js
 
-A blue button should appear to click: _Make Public_,
+## Website Structure
+### Pages
 
-Another blue button should appear to click: _Open Browser_.
+- Index
+- Pokemon Types Quiz
+- Pokemon Types
+- Pokedex
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Architecture
 
-A blue button should appear to click: _Make Public_,
+- Landing page includes hero image and links to other destinations
+- consitent and clean navbar and footer and sidebar (navbar but in hamburger menu for smaller devices)
+- Out of 4 pages total, 3 have detailed descriptions about item contents on the page, and all have small images or logos of the items from/related to the pages 
 
-Another blue button should appear to click: _Open Browser_.
+## Ideation
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Collaborative Ideation Doc
+https://drive.google.com/drive/folders/13JOSnCfXt0f5JJC7kh8--VlJ4cqFHQ7d?usp=sharing
 
-To log into the Heroku toolbelt CLI:
+### User Stories
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ - I want to play a Pokémon quiz
+ - I want the site to have a visually appealing and intuitive interface
+ - I want to be able to start a new Pokémon quiz
+ - I want Immediate feedback on my answer
+ - I want questions to include Images of the Pokemon
+ - I want to be presented with multiple-choice questions
+ - I want to finish a quiz and see my final score
+ - I want the option to play the quiz in different difficulty levels
+ - I'm unfamiliar with pokemon, I want to learn what I need to know for the quizzes
+ - I want to see my current score as I progress through the quiz
+ - I want to see how many questions are remaining
+ - Receive a virtual bade or reward for completing the quiz successfully
+ - I want to be able to skip a question if I'm unsure and come back to it later
+ - Review the questions I answered incorrectly after completing the quiz
+ - Share my quiz results on social media
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Bugs / issues
 
-------
+- Repeating merge conflicts between separate forks, main repo and git issues overall (solved eventually thanks to Martin)
+- To avoid further issues we've decided to separate css and js files for each of the pages to keep it more simple per page. This enabled us to catch things getting out of hand faster and not messing up other parts of pages
+- An issue where at 968px width cards would show up as one per row and then at 768px would go back to 2 per row
+- Fixed touch not working on mobile devices by commenting out one of media query's
+- Fixed sidebar not working properly
+- Fixed main heading not displaying properly on mobile
+- Fixed an issue where question and score would continue past the set limit meaning the quiz couldn't end
 
-## Release History
+### Homepage Taglines
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- "Ready to check your pokemon knowledge with our quiz?"
+- "Think you know every pokemon from generation 1? Think again! (you probably don't)
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Future Improvments
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- add levels to the quiz which users can progress through
+- we'd like to add pokemon types quiz which challanges users knowledge of pokemon types
+- implement submiting the username to the site (username would be displayed across pages)
+- provide users with better quiz results feedback (eg. summary of quiz questions and answers provided)
+- reward users with badges (displayed via html upon completion of quiz levels)
+- more variation in available quizes
+- overall improvments to styling and site
+  
+- user profile page/login (further away)
+- add leaderboards, so other people could see who did better (further away)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Screenshots of the Finished Project
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Acknowledgments
+### Refrences
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The loadout: https://www.theloadout.com/pokemon-type-chart
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Shoutouts
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Coffee and Tea
+- Staff at Trend Micro for hosting the event and their presentation
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+#### Big Thanks To Martin for git help
