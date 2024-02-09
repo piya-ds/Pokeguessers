@@ -244,17 +244,17 @@ function shuffleOptions(array){
 
 
 /*Confetti Controls*/
-document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
-    let canvas = document.createElement("canvas");
-    let container = document.getElementsByClassName("button-wrapper")[0];
-    canvas.width = 600;
-    canvas.height = 600;
+// document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+//     let canvas = document.createElement("canvas");
+//     let container = document.getElementsByClassName("button-wrapper")[0];
+//     canvas.width = 600;
+//     canvas.height = 600;
   
-    container.appendChild(canvas);
+//     container.appendChild(canvas);
   
-    let confetti_button = confetti.create(canvas);
-    confetti_button().then(() => container.removeChild(canvas));
-  });
+//     let confetti_button = confetti.create(canvas);
+//     confetti_button().then(() => container.removeChild(canvas));
+//   });
 
 function showConfetti(){
     confetti({
