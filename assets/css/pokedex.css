@@ -1,4 +1,11 @@
+#pokedex-title{
+    font-size: xx-large;
+    width:100%;
+    color: #fff;
+    text-align:center;
+    margin-top: 30px;
 
+}
 
 #pokedex-content{
     width:500px;
@@ -12,6 +19,7 @@
     display: flex;
     margin: 0 auto;
     margin-top:100px;
+    margin-bottom:100px;
 
 }
 
@@ -171,6 +179,7 @@
     #pokedex-content{
         width:340px;
         height:340px;
+        margin-top:30px;
     }
 
     #pokemon-info {
@@ -206,6 +215,11 @@
         padding: 2px;
         font-size: 12px;
         overflow-y: auto;
+    
+    }
+
+    #pokedex-title{
+        font-size: large;
     
     }
 
