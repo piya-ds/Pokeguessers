@@ -106,7 +106,7 @@ button{
     cursor: pointer;
     background-color: var(--white-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
   
 }
 
@@ -138,7 +138,7 @@ button:hover {
     display: flex;
     align-items: center;
 }
-.finishquiz{
+#finishquiz{
 
     font-weight: 200;
     font-size: 1rem;
@@ -146,7 +146,16 @@ button:hover {
     height: 50px;
     width: 90px;
     background-color: #2f22e2;
+    border: none;
+    border-radius: 20px;
 }
 
 
-
+.show {
+    display: flex;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
