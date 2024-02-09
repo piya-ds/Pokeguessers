@@ -226,7 +226,7 @@ footer {}
         width: 100%;
     }
     .hero-column2 img {
-        width: 100%;
+        /*width: 100%;  -- Causing issues with responsivity*/
         align-self: center;
     }
     .hero-column1 {
