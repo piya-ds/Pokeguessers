@@ -227,10 +227,37 @@ function shuffleOptions(array){
   
   //---------------show confetti
 
-  function showConfetti(){
-    const ready = () => {
-        setTimeout(function() {
-            confetti.start();
-        },1000);
-    }
-  }
+//   function showConfetti(){
+//     const ready = () => {
+//         setTimeout(function() {
+//             confetti.start();
+//         },1000);
+//     }
+//   }
+
+/*Confetti Controls*/
+document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+    let canvas = document.createElement("canvas");
+    let container = document.getElementsByClassName("button-wrapper")[0];
+    canvas.width = 600;
+    canvas.height = 600;
+  
+    container.appendChild(canvas);
+  
+    let confetti_button = confetti.create(canvas);
+    confetti_button().then(() => container.removeChild(canvas));
+  });
+
+function showConfetti(){
+    confetti({
+        particleCount: 400,
+        angle:90,
+        spread: 400,
+        startVelocity: 15,
+        scalar: 0.9,
+        ticks: 90,
+        colors:['#FFFF00'],
+        shapes:['star']
+      })
+}
+/*------------------*/
