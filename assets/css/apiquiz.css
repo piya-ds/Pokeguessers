@@ -43,7 +43,10 @@ body {
 }
 #user-name{
     text-align: center;
-    font-size: 1rem;
+}
+
+.user{
+    font-size: 20px;
 }
 
 #progress-bar{
@@ -171,7 +174,7 @@ button:hover {
     color: var(--white-color);
     height: 50px;
     width: 90px;
-    background-color: #2f22e2;
+    background-color: #000000;
     border: none;
     border-radius: 20px;
 }

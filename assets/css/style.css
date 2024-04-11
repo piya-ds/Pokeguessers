@@ -73,7 +73,7 @@ input[type=text] {
 }
 
 .hero-column2 img {
-    width: auto;
+    width: 500px;
     overflow: hidden;
 }
 
@@ -221,15 +221,17 @@ footer {}
         flex-wrap: wrap;
     }
     .hero-column2 {
-        justify-content: flex-end;
+        display:flex;
+        justify-content: space-around;
         width: 100%;
     }
     .hero-column2 img {
-        width: 100%;
+        /*width: 100%;  -- Causing issues with responsivity*/
         align-self: center;
     }
     .hero-column1 {
         text-align: center;
+        margin-top:50px;
     }
     .hero .hero-column1 {
         padding-right: 0px;
